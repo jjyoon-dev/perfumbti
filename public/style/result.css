@@ -1,0 +1,203 @@
+
+/* result page start */
+article.result {
+    display: none;
+	/* background-image: url(images/mbti_result/result_1.png);
+	background-size: contain;
+	background-repeat: no-repeat; */
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 20px 50px;
+	/* border: 1px solid rgba(0, 0, 0, 0.7);
+	border-top: 0;
+	border-bottom: 0; */
+}
+
+@media screen and (max-width: 912px) {
+	article.result {
+		border: 0;
+	}
+}
+
+#result_img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	object-fit: cover;
+	box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.7);
+}
+
+
+/* 공유하기 & 링크 복사 */
+div.share_box {
+	/* background-color: #d9b0c4; */
+	margin-top: 50px;
+}
+
+div.share_box > p.share_text{
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+
+
+
+div.btn_wrap {
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-around;	
+	margin: 0 auto;	
+}
+
+div.btn_wrap > button {
+	text-decoration: none;	
+	outline: 0;
+	width: 50px;
+	height: 50px;
+	border: 0.0125rem solid rgba(0, 0, 0, 0.7);
+	border-radius: 50%;	
+	box-sizing: border-box;
+	padding: 0;
+	position: relative;	
+}
+
+div.btn_wrap > button:foucs {
+	border: 0;
+	outline: 0;
+}
+
+
+/* 버튼 아이콘 */
+div.btn_wrap > button {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 50%;
+	background-color: #f2f2f2;
+}
+
+div.btn_wrap > button.kakao_share {
+	background-color: #fae100;	
+	background-image: url(../images/icons/kakao_icon.png);
+}
+
+div.btn_wrap > button.facebook_share {
+	background-image: url(../images/icons/facebook_icon.png);
+	background-size: 100%;
+}
+
+div.btn_wrap > button.twitter_share {
+	background-image: url(../images/icons/twitter_icon.png);
+	background-size: 100%;
+}
+
+
+div.btn_wrap > button.link_share {
+	background-image: url(../images/icons/link_icon.png);
+}
+
+
+
+
+/* return */
+
+button.return_btn {
+	background-color: #6F1742;
+	font-weight: 800;
+	width: 50%;
+	/* height: 100px; */
+	border: 0;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 1.1rem;
+	outline: 0;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	padding: 10px 0;
+	line-height: 20px;
+}
+
+
+
+
+
+/* 공유 이미지 */
+/* 나도 해보기 */
+
+article.result_share {
+    display: flex;
+	width: 100%;
+	height: auto;
+	min-height: 610px;
+	overflow: hidden;
+	padding: 20px 50px;
+}
+
+img#result_img {
+	height: auto;
+}
+
+button.try_btn {
+	background-color: #6F1742;
+	font-weight: 800;
+	width: 100%;
+	height: 60px;
+	/* height: 100px; */
+	border: 0;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 1.1rem;
+	outline: 0;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	padding: 10px 0;
+	line-height: 20px;
+}
+@media screen and (max-width: 768px) {
+
+	div.btn_wrap {
+		width: 100%;
+	}
+
+
+	article.result_share {
+		height: 80vh;
+	}
+	
+	button.try_btn {
+		font-weight: 800;
+		height: 50px;
+		margin-top: 50px;
+		font-size: 1rem;
+	}
+
+	
+}
+
+
+
+/* kakao ad */
+.kakao_ad {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.banner {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.banner-img {
+	width: 300px;
+}
+
+
+/* footer {
+	margin-top: 50px;
+} */

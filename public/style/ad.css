@@ -1,0 +1,11 @@
+div.kakao_ad {
+    width: 100%;
+    margin: 0 auto;
+    /* opacity: 0; */
+    /* transform: translateX(-999px); */
+}
+
+div.kakao_ad.show {
+    opacity: 1;
+    transform: none;
+}
