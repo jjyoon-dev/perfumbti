@@ -1,5 +1,10 @@
 const db = firebase.firestore();
+var database = db.collection('perfumbti').doc('data');
+var userData = database.collection('user_data');
+var countData = database.collection('count_data');
+
 var testCount = db.collection('test_count');
+
 
 //객체 정보 & 초기화
 var mbti = "";
@@ -301,13 +306,46 @@ function start() {
 }
 
 
+// $("#select_A").click(
+// 	function () {
+// 		if (num == 13) {
+// 			q[12]["value"] = $("input:radio[name='question_option']:checked").attr("data-value");			
+// 			next();
+// 		} else {
+// 			q[num - 1]["value"] = $("input:radio[name='question_option']:checked").attr("data-value");		
+// 			next();
+// 		}
+// 		$('html, body').animate({
+// 			scrollTop: 0
+// 		}, 300);
+// 	}
+// );
+
+
+
+// $("#select_B").click(
+// 	function () {
+// 		if (num == 13) {
+// 			q[12]["value"] = $("input:radio[name='question_option']:checked").attr("data-value");			
+// 			console.log(q);
+// 			next();
+// 		} else {
+// 			q[num - 1]["value"] = $("input:radio[name='question_option']:checked").attr("data-value");		
+// 			next();
+// 		}
+// 		$('html, body').animate({
+// 			scrollTop: 0
+// 		}, 300);
+// 	}
+// )
+
 $("#select_A").click(
 	function () {
 		if (num == 13) {
-			q[12]["value"] = $("input:radio[name='question_option']:checked").attr("data-value");			
+			q[12]["value"] = 1;
 			next();
 		} else {
-			q[num - 1]["value"] = $("input:radio[name='question_option']:checked").attr("data-value");		
+			q[num - 1]["value"] = 1;
 			next();
 		}
 		$('html, body').animate({
@@ -321,11 +359,10 @@ $("#select_A").click(
 $("#select_B").click(
 	function () {
 		if (num == 13) {
-			q[12]["value"] = $("input:radio[name='question_option']:checked").attr("data-value");			
-			console.log(q);
+			q[12]["value"] = 0;
 			next();
 		} else {
-			q[num - 1]["value"] = $("input:radio[name='question_option']:checked").attr("data-value");		
+			q[num - 1]["value"] = 0;
 			next();
 		}
 		$('html, body').animate({
@@ -344,12 +381,71 @@ $("#return").click(
 
 $("#prev").click(
 	function () {
+
 		prev();
 	}
 );
 
+function prev() {
+	num--;
+	console.log("AAA");
+	if(num == 1) {
+	num = 1;
+	mbti = "";
+	$(".question").hide();
+	$(".question").removeClass("act");
+	$(".question").removeClass("loading_block");
+	$(".container").removeClass("c_act");
+	$(".kakao_ad").removeClass("show");
+	$(".result").hide();
+	$(".start").show();
+	$(".kakao_ad").show();
+	$("#footer").show();
+	$("#footer").removeClass("hide");
+	$('html, body').animate({
+		scrollTop: 0
+	}, 300);
+	} else {
+		console.log("num=" + num);
+		$(".question_box").hide();
+		$(".question_btn_wrap").hide();
+		$(".prev_btn").hide();
+		$(".question_box").css("opacity", "0");
+		$(".question_btn_wrap").css("opacity", "0");
+		$(".prev_btn").css("opacity", "0");
+	
+		var nonOpacity = function () {
+			// setTimeout(function () {
+				$(".question_box").show();
+				$(".question_btn_wrap").show();
+				$(".prev_btn").show();
+				$(".question_box").css("opacity", "1");
+				$(".question_btn_wrap").css("opacity", "1");
+				$(".prev_btn").css("opacity", "1");
+
+			// }, 150)
+		}
+		setTimeout(nonOpacity, 200);
+	
+		$(".question").css("background-image", " linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) ), url(" + q[num-1]["question_img"] + ") ");
+		$("#title").html(q[num-1]["title"]);
+		$("#type").val(q[num-1]["type"]);
+		$("#progress_num").html(num-1 + " / 12");
+		$("#label_A").html(q[num-1]["A"]);
+		$("#label_B").html(q[num-1]["B"]);
+	
+
+		// console.log($("input:radio[name='question_option']:checked").attr("data-value"));		
+	}
+	console.log(num);
+
+	
+}
+
+
 
 function next() {
+	console.log(num);
 	if (num == 13) {
 		$(".question").hide();
 
@@ -427,23 +523,17 @@ function next() {
 		};
 
 		selected["Result"] = mbti;
-		db.collection('data').add({
+		userData.add({
 			selected
 		});
 
 		// 테스트 결과를 본 횟수 누적
-		testCount.get().then(snapshot => {
-			snapshot.forEach(doc => {
-				var totalCount = doc.data()["count"];
-				testCount.doc('total').update({
-					count: totalCount + 1
-				});
+		countData.doc("result_count").get().then((snapshot) => {
+			var resultCount = snapshot.data()["count"];			
+			countData.doc("result_count").update({			
+				count: resultCount + 1
 			});
-		}).catch(err => {
-			console.log('Error getting documents', err);
-		})
-
-
+		});		
 
 
 		// 결과 화면 출력
@@ -456,17 +546,21 @@ function next() {
 		// $(".progress-bar").attr('style', 'width: calc(100/11*' + num + '%)');
 		// $("#question_img").attr("src", q[num]["question_img"]);
 
-		$(".question_box").hide()
-		$(".question_btn_wrap").hide()
+		$(".question_box").hide();
+		$(".question_btn_wrap").hide();
+		$(".prev_btn").hide();
 		$(".question_box").css("opacity", "0");
 		$(".question_btn_wrap").css("opacity", "0");
+		$(".prev_btn").css("opacity", "0");
 
 		var nonOpacity = function () {
 			// setTimeout(function () {
-				$(".question_box").show()
-				$(".question_btn_wrap").show()
+				$(".question_box").show();
+				$(".question_btn_wrap").show();
+				$(".prev_btn").show();
 				$(".question_box").css("opacity", "1");
 				$(".question_btn_wrap").css("opacity", "1");
+				$(".prev_btn").css("opacity", "1");
 			// }, 150)
 		}
 		setTimeout(nonOpacity, 200);

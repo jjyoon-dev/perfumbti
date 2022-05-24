@@ -2,26 +2,20 @@
   // const url = 'https://abit.ly/perfumbti_present/';
 
 
-  var shareData = db.collection('share_data');
-
-
 
 
 
   function setShare() {
 
     // 공유 횟수 불러오기 & 1회 추가하기 [ 카카오 ] 
-    shareData.get().then(snapshot => {
-      snapshot.forEach(doc => {
-        var kakaoCount = doc.data()["kakaotalk"];
-        shareData.doc('click_count').update({
-          kakaotalk: kakaoCount + 1
-        });
-      });
-    }).catch(err => {
-      console.log('Error getting documents', err);
-    })
-
+    countData.doc("share_count").get().then((snapshot) => {
+			var kakaoCount = snapshot.data()["kakaotalk"];			
+			countData.doc("share_count").update({			
+				kakaotalk: kakaoCount + 1
+			});
+		}).catch(err => {
+        console.log('Error getting documents', err);
+      });	
 
 
     const shareTitle = "나를 닮은 향수 선물 테스트";
@@ -72,33 +66,33 @@
   // facebook share
   $("#btnFacebook").click(function () {
     // 공유 횟수 불러오기 & 1회 추가하기 [ 페이스북 ] 
-    shareData.get().then(snapshot => {
-      snapshot.forEach(doc => {
-        var facebookCount = doc.data()["facebook"];
-        shareData.doc('click_count').update({
-          facebook: facebookCount + 1
-        });
-      });
-    }).catch(err => {
-      console.log('Error getting documents', err);
-    })
+    countData.doc("share_count").get().then((snapshot) => {
+			var facebookCount = snapshot.data()["facebook"];			
+			countData.doc("share_count").update({			
+				facebook: facebookCount + 1
+			});
+		}).catch(err => {
+        console.log('Error getting documents', err);
+      });	
 
     shareFacebook();
   });
 
+
+
   // twitter share
   $("#btnTwitter").click(function () {
     // 공유 횟수 불러오기 & 1회 추가하기 [ 트위터 ] 
-    shareData.get().then(snapshot => {
-      snapshot.forEach(doc => {
-        var twitterCount = doc.data()["twitter"];
-        shareData.doc('click_count').update({
-          twitter: twitterCount + 1
-        });
-      });
-    }).catch(err => {
-      console.log('Error getting documents', err);
-    })
+    countData.doc("share_count").get().then((snapshot) => {
+			var twitterCount = snapshot.data()["twitter"];			
+			countData.doc("share_count").update({			
+				twitter: twitterCount + 1
+			});
+		}).catch(err => {
+        console.log('Error getting documents', err);
+      });	
+
+
     shareTwitter();
   });
 
@@ -112,16 +106,14 @@
   $('.link_share').click(
     function () {
       // 공유 횟수 불러오기 & 1회 추가하기 [ 링크 ] 
-      var clickCount = shareData.get().then(snapshot => {
-        snapshot.forEach(doc => {
-          var linkCount = doc.data()["link"];
-          shareData.doc('click_count').update({
-            link: linkCount + 1
-          });
+      countData.doc("share_count").get().then((snapshot) => {
+        var copyCount = snapshot.data()["link_copy"];			
+        countData.doc("share_count").update({			
+          link_copy: copyCount + 1
         });
       }).catch(err => {
-        console.log('Error getting documents', err);
-      })
+          console.log('Error getting documents', err);
+        });	
 
       clip();
     }

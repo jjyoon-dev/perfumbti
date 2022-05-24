@@ -198,7 +198,7 @@ article.question>fieldset {
 	/* height: 100px; */
 }
 
-label.question_label {
+button.question_btn {
 	width: 80%;
 	height: 80px;
 	border: 2px solid #ffffff;
@@ -216,9 +216,24 @@ label.question_label {
 	align-items: center;
 }
 
-label.question_label:last-of-type {
+button.question_btn:last-of-type {
 	margin-top: 20px;
 }
+
+
+button.prev_btn {	
+	width: 64px;	
+	height: 64px;
+	background-image: url(../images/icons/left_arrow.png);
+	border: 0;
+	border-radius: 50%;
+	background-color: transparent;
+	margin: 0 auto;
+	margin-top: 50px;
+	outline: 0;
+	transition: 1.5s;
+}
+
 /* question page end */
 
 
