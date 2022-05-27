@@ -49,7 +49,7 @@ article {
 }
 
 article.start {
-    height: calc(100vh - 185px);
+    /* height: calc(100vh - 185px); */
     padding: 0 30px
 }
 
@@ -86,8 +86,10 @@ article.start>button.start_btn {
     height: 60px;
     border: 0;
     border-radius: 0;
+    color: #ffffff;
     outline: 0;
-    margin-top: 100px
+    margin-top: 100px;
+    cursor: pointer;
 }
 
 article.start>button.start_btn:hover {
@@ -133,9 +135,10 @@ article.question>div.question_box {
     display: flex;
     height: 300px;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     transition: 1.5s;
-    opacity: 0
+    opacity: 0;    
 }
 
 article.question>div.question_box>p.progress_num {
@@ -156,6 +159,7 @@ article.question>div.question_box>h2#title {
 }
 
 article.question>fieldset.question_btn_wrap {
+    border: 0;
     transition: 1.5s;
     opacity: 0
 }
@@ -178,7 +182,7 @@ article.question>fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%
+    /* width: 100%; */
 }
 
 button.question_btn {
@@ -209,6 +213,7 @@ button.prev_btn {
     background-image: url(../images/icons/prev_btn.png);
     /* border: 2px solid #ffffff; */
     border-radius: 50%;
+    cursor: pointer;
     opacity: 0.5;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +221,7 @@ button.prev_btn {
     margin: 0 auto;
     margin-top: 50px;
     outline: 0;
-    transition: 1.5s
+    transition: 1.5s    
 }
 
 footer {
@@ -226,7 +231,7 @@ footer {
     width: 100%;
     height: 60px;
     margin: 0 auto;
-    padding: 50px 0
+    padding: 50px 0px 50px;
 }
 
 footer>#email {
@@ -261,6 +266,9 @@ footer.hide>* {
 div.kakao_ad {
     height: 50px
 }
+
+
+
 
 @media screen and (max-width:768px) {
     div.content_wrap {

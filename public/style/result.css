@@ -5,7 +5,7 @@ article.result {
 	/* background-image: url(images/mbti_result/result_1.png);
 	background-size: contain;
 	background-repeat: no-repeat; */
-	width: 100%;
+	/* width: 100%; */
 	height: auto;
 	overflow: hidden;
 	padding: 20px 50px;
@@ -13,6 +13,15 @@ article.result {
 	border-top: 0;
 	border-bottom: 0; */
 }
+
+article.result > p.save_text {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;	
+}
+
+
+
 
 @media screen and (max-width: 912px) {
 	article.result {
@@ -33,19 +42,39 @@ article.result {
 /* 공유하기 & 링크 복사 */
 div.share_box {
 	/* background-color: #d9b0c4; */
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 div.share_box > p.share_text{
 	text-align: center;
 	font-size: 1.5rem;
 	font-weight: bold;
+	margin-bottom: 0;
+}
+
+/* share count */
+div.count_box {
+    display: flex;
+    justify-content: space-evenly;
+	padding: 20px 0;
+	font-size: 1.3rem;
+}
+
+div.count_box > div.share_count {
+	width: 100px;
+	text-align: center;
+}
+
+div.count_box > div.share_count > i {
+	margin-right: 10px;
 }
 
 
 
 
+
 div.btn_wrap {
+	width: 80%;
 	display: flex;
 	margin-top: 20px;
 	justify-content: space-around;	
@@ -57,9 +86,10 @@ div.btn_wrap > button {
 	outline: 0;
 	width: 50px;
 	height: 50px;
-	border: 0.0125rem solid rgba(0, 0, 0, 0.7);
+	border: 0.0125rem solid rgba(0, 0, 0, 0);
 	border-radius: 50%;	
 	box-sizing: border-box;
+    cursor: pointer;
 	padding: 0;
 	position: relative;	
 }
@@ -80,21 +110,23 @@ div.btn_wrap > button {
 
 div.btn_wrap > button.kakao_share {
 	background-color: #fae100;	
-	background-image: url(../images/icons/kakao_icon.png);
+	background-image: url(../images/icons/kakao_logo.png);
+	background-size: cover;
 }
 
 div.btn_wrap > button.facebook_share {
-	background-image: url(../images/icons/facebook_icon.png);
+	background-image: url(../images/icons/facebook_logo.png);
 	background-size: 100%;
 }
 
 div.btn_wrap > button.twitter_share {
-	background-image: url(../images/icons/twitter_icon.png);
+	background-image: url(../images/icons/twitter_logo.png);
 	background-size: 100%;
 }
 
 
 div.btn_wrap > button.link_share {
+	background-color: #f5f5f5;
 	background-image: url(../images/icons/link_icon.png);
 }
 
@@ -114,7 +146,7 @@ button.return_btn {
 	font-size: 1.1rem;
 	outline: 0;
 	margin: 0 auto;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	margin-top: 50px;
 	padding: 10px 0;
 	line-height: 20px;
@@ -160,7 +192,7 @@ button.try_btn {
 @media screen and (max-width: 768px) {
 
 	div.btn_wrap {
-		width: 100%;
+		width: 90%;
 	}
 
 

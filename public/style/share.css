@@ -1,1 +1,45 @@
-article.result_share{display:flex;width:100%;height:auto;min-height:610px;overflow:hidden;padding:20px 50px}img#result_img{height:auto}button.try_btn{background-color:#6f1742;font-weight:800;width:100%;height:60px;border:0;border-radius:10px;color:#fff;font-size:1.1rem;outline:0;margin:0 auto;margin-bottom:100px;margin-top:50px;padding:10px 0;line-height:20px}@media screen and (max-width:768px){button.try_btn{font-weight:800;height:50px;margin-top:50px;font-size:1rem}}
+article.result_share {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 610px;
+    overflow: hidden;
+    padding: 20px 50px
+}
+
+article.result_share > p.save_text {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;	
+}
+
+
+img#result_img {
+    height: auto
+}
+
+button.try_btn {
+    background-color: #6f1742;
+    font-weight: 800;
+    width: 100%;
+    height: 60px;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: 0;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    padding: 10px 0;
+    line-height: 20px
+}
+
+@media screen and (max-width:768px) {
+    button.try_btn {
+        font-weight: 800;
+        height: 50px;
+        margin-top: 50px;
+        font-size: 1rem
+    }
+}
