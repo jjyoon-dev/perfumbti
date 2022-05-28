@@ -2,16 +2,10 @@
 /* result page start */
 article.result {
     display: none;
-	/* background-image: url(images/mbti_result/result_1.png);
-	background-size: contain;
-	background-repeat: no-repeat; */
-	/* width: 100%; */
 	height: auto;
 	overflow: hidden;
 	padding: 20px 50px;
-	/* border: 1px solid rgba(0, 0, 0, 0.7);
-	border-top: 0;
-	border-bottom: 0; */
+
 }
 
 article.result > p.save_text {
@@ -41,36 +35,34 @@ article.result > p.save_text {
 
 /* 공유하기 & 링크 복사 */
 div.share_box {
-	/* background-color: #d9b0c4; */
 	margin-top: 30px;
 }
 
-div.share_box > p.share_text{
+div.share_box > div.share_count {
+	display: flex;
+	align-items: center;	
 	text-align: center;
-	font-size: 1.5rem;
+	justify-content: center;	
+	margin-bottom: 1rem;
+}
+
+div.share_box > div.share_count > i {
+	margin-right: 10px;	
+}
+
+
+div.share_box > div.share_count > p.share_text {
+	font-size: 1.1rem;
 	font-weight: bold;
-	margin-bottom: 0;
+	margin: 0;
+	width: 130px;
 }
 
-/* share count */
-div.count_box {
-    display: flex;
-    justify-content: space-evenly;
-	padding: 20px 0;
-	font-size: 1.3rem;
-}
-
-div.count_box > div.share_count {
+div.share_box > div.share_count > div.share_count_wrap {
 	width: 100px;
-	text-align: center;
+	font-size: 1.1rem;
+	font-weight: bold;
 }
-
-div.count_box > div.share_count > i {
-	margin-right: 10px;
-}
-
-
-
 
 
 div.btn_wrap {
@@ -121,7 +113,7 @@ div.btn_wrap > button.facebook_share {
 
 div.btn_wrap > button.twitter_share {
 	background-image: url(../images/icons/twitter_logo.png);
-	background-size: 100%;
+	background-size: 300%;
 }
 
 
@@ -228,8 +220,3 @@ button.try_btn {
 .banner-img {
 	width: 300px;
 }
-
-
-/* footer {
-	margin-top: 50px;
-} */

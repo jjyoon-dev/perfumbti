@@ -6,7 +6,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'serif', sans-serif
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 header {
@@ -55,7 +55,8 @@ article.start {
 
 article.start>h1 {
     font-size: 1.7rem;
-    font-weight: bold
+    font-weight: bold;
+    text-align: center;
 }
 
 article.start>div.thumbnail_box {
@@ -94,6 +95,25 @@ article.start>button.start_btn {
 
 article.start>button.start_btn:hover {
     background-color: #54297f
+}
+
+
+/* 테스트 참여 횟수 */
+article.start > div.play_count_wrap {
+    text-align: center;
+}
+
+article.start > div.play_count_wrap > p {
+    color: #6F1742;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 50px 0 0;        
+}
+
+article.start > div.play_count_wrap > span.count_play_num {
+    font-size: 2.5rem;
+	font-weight: bold;
+
 }
 
 article.question>div.progress {
@@ -212,12 +232,14 @@ button.prev_btn {
     height: 64px;
     background-image: url(../images/icons/prev_btn.png);
     /* border: 2px solid #ffffff; */
+    border: 1px solid transparent;
     border-radius: 50%;
     cursor: pointer;
     opacity: 0.5;
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: 50% 50%; */
+    /* background-color:rgba(0, 0, 0, 0.5); */
     margin: 0 auto;
     margin-top: 50px;
     outline: 0;

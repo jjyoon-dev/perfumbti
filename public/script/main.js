@@ -5,7 +5,6 @@ var countData = database.collection('count_data');
 var testCount = db.collection('test_count');
 
 // 참여횟수, 공유횟수 count
-
 countData.doc("result_count").get().then((snapshot) => {
     var count = snapshot.data()["count"] + 257;
     var play_count = count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -152,7 +151,7 @@ var result = {
     },
     "INFDW": {
         "mbti": "infdw",
-        "result_img": "images/mbti_result/result_IFNDW.jpeg",
+        "result_img": "images/mbti_result/result_INFDW.jpeg",
         "result_html": "./pages/result_INFDW.html",
         "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INFDW.jpeg"
     },
@@ -487,7 +486,7 @@ function next() {
             });
         });
         $("#result_img").attr("src", result[mbti]["result_img"]);
-        
+
     } else {
         $(".question_box").hide();
         $(".question_btn_wrap").hide();

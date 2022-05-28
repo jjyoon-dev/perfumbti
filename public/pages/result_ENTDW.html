@@ -69,26 +69,24 @@
                 <input type="hidden" id="shareMbti" name="share_mbti" value="ENTDW" >
                 <img id="result_img" src="../images/mbti_result/result_ENTDW.jpeg" alt="">
                 <p class="save_text">▲꾹 눌러 이미지 저장하기▲</p>
-                <div class=share_box>
-                    <p class=share_text>결과 공유하기</p>
-                    <div class="count_box">
-                        <div class="share_count">
-                            <i class="fa-solid fa-play"></i><span class="count_num count_play_num">0</span>
-                        </div>
-                        <div class="share_count">
-                            <i class="fa-solid fa-share"></i><span class="count_num count_share_num">0</span>
-                        </div>
+                                <div class="share_box">
+                    <div class="share_count">     
+                        <p class=share_text>테스트 공유하기</p>    
+                        <div class="share_count_wrap">
+                            <i class="fa-solid fa-share"></i>       
+                            <span class="count_num count_share_num">0</span>
+                        </div>            
                     </div>
                     <div class=btn_wrap>
-                        <button type=button id=create-kakao-link-btn class=kakao_share onclick=js:kakaoResultPageShare()>
+                        <button type=button id=create-kakao-link-btn class=kakao_share onclick=js:kakaoTestShare()>
                         </button>
-                        <button id=btnResultPageFacebook class=facebook_share return false;">
+                        <button id=btnTestFacebook class=facebook_share return false;">
                         </button>
-                        <button id=btnResultPageTwitter class=twitter_share return false;">
+                        <button id=btnTestTwitter class=twitter_share return false;">
                         </button>
-                        <button id=btnResultPageCopy class=link_share onclick="resultPageClip();return false">
+                        <button id=btnTestCopy class=link_share onclick="test_clip();return false">
                         </button>
-                    </div>
+                    </div>                    
                 </div>
                 <button id="try" type="button" class="try_btn" onclick="js:moveHome();">테스트 하러 가기</button>
             </article>
