@@ -103,7 +103,7 @@ var q = {
         "question_img": "images/mbti_question/mbti_9.jpg"
     },
     10: {
-        "title": "프로젝트 미팅 첫날</br>어떻게 옷을 입고 갈까?.",
+        "title": "프로젝트 미팅 첫날</br>어떻게 옷을 입고 갈까?",
         "type": "OD",
         "A": "평소에 내가 입던 스타일로 편하게 입는다.",
         "B": "평소보다는 좀 더 신경써서 차려 입는다.",
@@ -112,10 +112,10 @@ var q = {
         "question_img": "images/mbti_question/mbti_10.jpg"
     },
     11: {
-        "title": "외출 하기 전 마지막으로</br>향수를 뿌리려고 하는데,</br>내가 뿌릴 향수는...",
+        "title": "외출 하기 전 마지막으로</br>향수를 뿌리려고 하는데,</br>내가 뿌릴 향수의 향기는...",
         "type": "WU",
-        "A": "대중적으로 알려진 호불호 적은 향수",
-        "B": "비교적 생소하지만 개성 있는 향수",
+        "A": "대중적으로 알려진 친숙한 향기",
+        "B": "비교적 생소한 개성 있는 향기",
         "value": 0,
         "number": 11,
         "question_img": "images/mbti_question/mbti_11.jpg"
