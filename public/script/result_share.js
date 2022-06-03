@@ -8,8 +8,10 @@ function kakaoResultShare() {
     console.log(mbti);   
     countData.doc("share_count").get().then((snapshot) => {
         var kakaoCount = snapshot.data()["kakaotalk"];
+        var totalCount = snapshot.data()["total"];
         countData.doc("share_count").update({
-            kakaotalk: kakaoCount + 1
+            kakaotalk: kakaoCount + 1,
+            total: totalCount +1
         });
     }).catch(err => {
         console.log('Error getting documents', err);
@@ -64,8 +66,10 @@ function shareResultTwitter() {
 $("#btnResultFacebook").click(function () {
     countData.doc("share_count").get().then((snapshot) => {
         var facebookCount = snapshot.data()["facebook"];
+        var totalCount = snapshot.data()["total"];
         countData.doc("share_count").update({
-            facebook: facebookCount + 1
+            facebook: facebookCount + 1,
+            total: totalCount +1
         });
     }).catch(err => {
         console.log('Error getting documents', err);
@@ -75,8 +79,10 @@ $("#btnResultFacebook").click(function () {
 $("#btnResultTwitter").click(function () {
     countData.doc("share_count").get().then((snapshot) => {
         var twitterCount = snapshot.data()["twitter"];
+        var totalCount = snapshot.data()["total"];
         countData.doc("share_count").update({
-            twitter: twitterCount + 1
+            twitter: twitterCount + 1,
+            total: totalCount +1
         });
     }).catch(err => {
         console.log('Error getting documents', err);
@@ -86,8 +92,10 @@ $("#btnResultTwitter").click(function () {
 $('.link_share').click(function () {
     countData.doc("share_count").get().then((snapshot) => {
         var copyCount = snapshot.data()["link_copy"];
+        var totalCount = snapshot.data()["total"];
         countData.doc("share_count").update({
-            link_copy: copyCount + 1
+            link_copy: copyCount + 1,
+            total: totalCount +1
         });
     }).catch(err => {
         console.log('Error getting documents', err);
