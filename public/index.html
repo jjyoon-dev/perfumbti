@@ -7,10 +7,10 @@
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <title>나를 닮은 향수 선물 테스트</title>
     <meta name="Autor" content="Joshua Jeremiah Yoon">
-    <meta name="title" content="나를 닮은 향수 선물 테스트">
-    <meta name=”keywords” content="향수테스트, 향수MBTI, 향수 선물, MBTI테스트" />
+    <meta name="title" content="나를 닮은 향수 선물 테스트 - PerfumBTI">
+    <meta name=”keywords” content="향수테스트, 향수MBTI, 향수선물테스트, MBTI테스트, 나만의향수" />
     <meta name="site_name" content=Perfumbti>
-    <meta name="description" content="나는 어떤 향수를 선물 받을지 간단한 질문을 통해 알아보는 테스트 입니다.">
+    <meta name="description" content="나는 어떤 향수를 선물 받을지 간단한 질문을 통해 알아보는 테스트 입니다.#향수MBTI #MBTI테스트 #향수테스트 #향수선물테스트 #나만의향수">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://iridescent-22bdc.web.app/"> <meta property="og:title" content="나를 닮은 향수 선물 테스트">
     <meta property="og:site_name" content="IRIDESCENT - PerfuMBTI">
@@ -56,8 +56,8 @@
         firebase.initializeApp(firebaseConfig);
     </script>
     <script src=./script/main.js defer></script>
-    <script src=./script/start_share.js charset=utf-8 defer></script>
-    <script src=./script/result_share.js charset=utf-8 defer></script>
+    <script src=./script/start_share.js defer></script>
+    <script src=./script/result_share.js defer></script>
 
     <header>
         <p class=title_logo onclick=restart()>나를 닮은 향수 선물 테스트</p>
@@ -83,11 +83,11 @@
                         </div>            
                     </div>
                     <div class=btn_wrap>
-                        <button type=button id=create-kakao-link-btn class=kakao_share onclick=js:kakaoTestShare()>
+                        <button type=button id="btnTestKakao" class=kakao_share onclick=js:kakaoTestShare()>
                         </button>
-                        <button id=btnTestFacebook class=facebook_share return false;">
+                        <button id=btnTestFacebook class=facebook_share>
                         </button>
-                        <button id=btnTestTwitter class=twitter_share return false;">
+                        <button id=btnTestTwitter class=twitter_share>
                         </button>
                         <button id=btnTestCopy class=link_share onclick="test_clip();return false">
                         </button>
@@ -101,13 +101,14 @@
                 </div>
                 <input id=type type=hidden value=EI>
                 <fieldset class=question_btn_wrap>
-                    <button class=question_btn type=radio id=select_A name=option value=A>1번 선택지</button>
-                    <button class=question_btn type=radio id=select_B name=option value=B>2번 선택지</button>
+                    <button class="question_btn" type="radio" id="select_A" name="option" value="A">1번 선택지</button>
+                    <button class="question_btn" type="radio" id="select_B" name="option" value="B">2번 선택지</button>
                 </fieldset>
                 <button id=prev class=prev_btn></button>
             </article>
-            <article class=loading>
-                <div class=loader>
+            <article class="loading">
+                <h2 class="hidden">loading</h2>
+                <div class="loader">
                     <span style=--i:1>선</span>
                     <span style=--i:2>물</span>
                     <span style=--i:4><i class="fa-solid fa-gift"></i></span>
@@ -117,6 +118,7 @@
                 </div>
             </article>
             <article class=result>
+                <h2 class="hidden">result page</h2>
                 <input type="hidden" id="resultMbti" name="result_mbti" value="" >
                 <img id=result_img src=images/mbti_result/result_1.png alt>
                 <p class="save_text">꾹 눌러 이미지 저장하기</p>
@@ -129,11 +131,11 @@
                         </div>            
                     </div>
                     <div class=btn_wrap>
-                        <button type=button id=create-kakao-link-btn class=kakao_share onclick=js:kakaoResultShare()>
+                        <button type=button id="btnResultKakao" class=kakao_share onclick=js:kakaoResultShare()>
                         </button>
-                        <button id=btnResultFacebook class=facebook_share return false;">
+                        <button id=btnResultFacebook class=facebook_share>
                         </button>
-                        <button id=btnResultTwitter class=twitter_share return false;">
+                        <button id=btnResultTwitter class=twitter_share>
                         </button>
                         <button id=btnResultCopy class=link_share onclick="result_clip();return false">
                         </button>
@@ -143,7 +145,7 @@
             </article>
         </div>
         <footer id=footer>
-            <a id=email href mailto:iridescent0606@naver.com>iridescent0606@naver.com</a>
+            <a id=email href="mailto:iridescent0606@naver.com">iridescent0606@naver.com</a>
             <small id=copy>Copyright &#169; 2022. Team Iridescent All rights reserved.</small>
         </footer>
         <div class=kakao_ad>
@@ -151,5 +153,5 @@
                 data-ad-height=50></ins>
         </div>
     </div>
-    <script type=text/javascript src=//t1.daumcdn.net/kas/static/ba.min.js async></script>
+    <script type=text/javascript src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js> </script> </body> </html>
