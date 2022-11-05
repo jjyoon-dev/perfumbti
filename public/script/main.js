@@ -135,193 +135,225 @@ var result = {
         "mbti": "infou",
         "result_img": "images/mbti_result/result_INFOU.jpeg",
         "result_html": "./pages/result_INFOU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INFOU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INFOU.jpeg",
+        "perfume": "르 라보 어나더13"
     },
     "INFOW": {
         "mbti": "infow",
         "result_img": "images/mbti_result/result_INFOW.jpeg",
         "result_html": "./pages/result_INFOW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INFOW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INFOW.jpeg",
+        "perfume": "조 말론 우드세이지 앤 씨솔트"
     },
     "INFDU": {
         "mbti": "infdu",
         "result_img": "images/mbti_result/result_INFDU.jpeg",
         "result_html": "./pages/result_INFDU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INFDU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INFDU.jpeg",
+        "perfume": "메종 프란시스 커정 우드 사틴 무드"
     },
     "INFDW": {
         "mbti": "infdw",
         "result_img": "images/mbti_result/result_INFDW.jpeg",
         "result_html": "./pages/result_INFDW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INFDW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INFDW.jpeg",
+        "perfume": "바이레도 모하비 고스트"
     },
     "INTOU": {
         "mbti": "intou",
         "result_img": "images/mbti_result/result_INTOU.jpeg",
         "result_html": "./pages/result_INTOU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INTOU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INTOU.jpeg",
+        "perfume": "프레데릭 말 뮤스크 라바줴"
     },
     "INTOW": {
         "mbti": "intow",
         "result_img": "images/mbti_result/result_INTOW.jpeg",
         "result_html": "./pages/result_INTOW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INTOW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INTOW.jpeg",
+        "perfume": "이솝 테싯"
     },
     "INTDU": {
         "mbti": "intdu",
         "result_img": "images/mbti_result/result_INTDU.jpeg",
         "result_html": "./pages/result_INTDU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INTDU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INTDU.jpeg",
+        "perfume": "톰 포드 오드 우드"
     },
     "INTDW": {
         "mbti": "intdw",
         "result_img": "images/mbti_result/result_INTDW.jpeg",
         "result_html": "./pages/result_INTDW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INTDW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_INTDW.jpeg",
+        "perfume": "바이레도 로즈 오브 노 맨즈 랜드"
     },
     "ISFOU": {
         "mbti": "isfou",
         "result_img": "images/mbti_result/result_ISFOU.jpeg",
         "result_html": "./pages/result_ISFOU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISFOU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISFOU.jpeg",
+        "perfume": "딥디크 플레르 드 뽀"
     },
     "ISFOW": {
         "mbti": "isfow",
         "result_img": "images/mbti_result/result_ISFOW.jpeg",
         "result_html": "./pages/result_ISFOW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISFOW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISFOW.jpeg",
+        "perfume": "르 라보 암브레트 9"
     },
     "ISFDU": {
         "mbti": "isfdu",
         "result_img": "images/mbti_result/result_ISFDU.jpeg",
         "result_html": "./pages/result_ISFDU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISFDU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISFDU.jpeg",
+        "perfume": "조 러브스 화이트 로즈 앤 레몬 리브스"
     },
     "ISFDW": {
         "mbti": "isfdw",
         "result_img": "images/mbti_result/result_ISFDW.jpeg",
         "result_html": "./pages/result_ISFDW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISFDW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISFDW.jpeg",
+        "perfume": "조 말론 블랙베리 앤 베이"
     },
     "ISTOU": {
         "mbti": "istou",
         "result_img": "images/mbti_result/result_ISTOU.jpeg",
         "result_html": "./pages/result_ISTOU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISTOU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISTOU.jpeg",
+        "perfume": ""
     },
     "ISTOW": {
         "mbti": "istow",
         "result_img": "images/mbti_result/result_ISTOW.jpeg",
         "result_html": "./pages/result_ISTOW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISTOW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISTOW.jpeg",
+        "perfume": ""
     },
     "ISTDU": {
         "mbti": "istdu",
         "result_img": "images/mbti_result/result_ISTDU.jpeg",
         "result_html": "./pages/result_ISTDU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISTDU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISTDU.jpeg",
+        "perfume": ""
     },
     "ISTDW": {
         "mbti": "istdw",
         "result_img": "images/mbti_result/result_ISTDW.jpeg",
         "result_html": "./pages/result_ISTDW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISTDW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ISTDW.jpeg",
+        "perfume": ""
     },
     "ENFOU": {
         "mbti": "enfou",
         "result_img": "images/mbti_result/result_ENFOU.jpeg",
         "result_html": "./pages/result_ENFOU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENFOU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENFOU.jpeg",
+        "perfume": ""
     },
     "ENFOW": {
         "mbti": "enfow",
         "result_img": "images/mbti_result/result_ENFOW.jpeg",
         "result_html": "./pages/result_ENFOW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENFOW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENFOW.jpeg",
+        "perfume": ""
     },
     "ENFDU": {
         "mbti": "enfdu",
         "result_img": "images/mbti_result/result_ENFDU.jpeg",
         "result_html": "./pages/result_ENFDU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENFDU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENFDU.jpeg",
+        "perfume": ""
     },
     "ENFDW": {
         "mbti": "enfdw",
         "result_img": "images/mbti_result/result_ENFDW.jpeg",
         "result_html": "./pages/result_ENFDW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENFDW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENFDW.jpeg",
+        "perfume": ""
     },
     "ENTOU": {
         "mbti": "entou",
         "result_img": "images/mbti_result/result_ENTOU.jpeg",
         "result_html": "./pages/result_ENTOU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENTOU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENTOU.jpeg",
+        "perfume": ""
     },
     "ENTOW": {
         "mbti": "entow",
         "result_img": "images/mbti_result/result_ENTOW.jpeg",
         "result_html": "./pages/result_ENTOW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENTOW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENTOW.jpeg",
+        "perfume": ""
     },
     "ENTDU": {
         "mbti": "entdu",
         "result_img": "images/mbti_result/result_ENTDU.jpeg",
         "result_html": "./pages/result_ENTDU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENTDU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENTDU.jpeg",
+        "perfume": ""
     },
     "ENTDW": {
         "mbti": "entdw",
         "result_img": "images/mbti_result/result_ENTDW.jpeg",
         "result_html": "./pages/result_ENTDW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENTDW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ENTDW.jpeg",
+        "perfume": ""
     },
     "ESFOU": {
         "mbti": "esfou",
         "result_img": "images/mbti_result/result_ESFOU.jpeg",
         "result_html": "./pages/result_ESFOU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESFOU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESFOU.jpeg",
+        "perfume": ""
     },
     "ESFOW": {
         "mbti": "esfow",
         "result_img": "images/mbti_result/result_ESFOW.jpeg",
         "result_html": "./pages/result_ESFOW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESFOW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESFOW.jpeg",
+        "perfume": ""
     },
     "ESFDU": {
         "mbti": "enfdu",
         "result_img": "images/mbti_result/result_ESFDU.jpeg",
         "result_html": "./pages/result_ESFDU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESFDU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESFDU.jpeg",
+        "perfume": ""
     },
     "ESFDW": {
         "mbti": "esfdw",
         "result_img": "images/mbti_result/result_ESFDW.jpeg",
         "result_html": "./pages/result_ESFDW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESFDW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESFDW.jpeg",
+        "perfume": ""
     },
     "ESTOU": {
         "mbti": "estou",
         "result_img": "images/mbti_result/result_ESTOU.jpeg",
         "result_html": "./pages/result_ESTOU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESTOU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESTOU.jpeg",
+        "perfume": ""
     },
     "ESTOW": {
         "mbti": "estow",
         "result_img": "images/mbti_result/result_ESTOW.jpeg",
         "result_html": "./pages/result_ESTOW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESTOW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESTOW.jpeg",
+        "perfume": ""
     },
     "ESTDU": {
         "mbti": "estdu",
         "result_img": "images/mbti_result/result_ESTDU.jpeg",
         "result_html": "./pages/result_ESTDU.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESTDU.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESTDU.jpeg",
+        "perfume": ""
     },
     "ESTDW": {
         "mbti": "estdw",
         "result_img": "images/mbti_result/result_ESTDW.jpeg",
         "result_html": "./pages/result_ESTDW.html",
-        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESTDW.jpeg"
+        "result_thumbnail": "images/mbti_result/result_thumbnails/result_share_ESTDW.jpeg",
+        "perfume": ""
     }
 }
 
